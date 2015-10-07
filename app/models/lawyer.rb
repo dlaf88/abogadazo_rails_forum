@@ -1,2 +1,0 @@
-class Lawyer < User
-end
