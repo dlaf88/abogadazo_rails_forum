@@ -18,4 +18,6 @@ class Lawyer < ActiveRecord::Base
 
   validates :user, :address, :law_school, :image, presence: true
 
+  mount_uploader :image, AvatarUploader
+
 end

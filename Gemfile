@@ -18,6 +18,7 @@ gem 'unicorn-rails'
 gem 'omniauth-facebook'
 gem 'annotate'
 gem 'select2-rails'
+gem 'carrierwave'
 
 group :development do
   gem 'web-console', '~> 2.0'
