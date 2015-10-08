@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Description:
+  = @practice_area.description
+
+= link_to 'Edit', edit_practice_area_path(@practice_area)
+\|
+= link_to 'Back', practice_areas_path
