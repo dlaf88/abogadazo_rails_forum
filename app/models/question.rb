@@ -19,5 +19,7 @@ class Question < ActiveRecord::Base
   has_many :answers
 
   validates :user, :topic, :title, :content, presence: true
+
+  paginates_per 20
   
 end

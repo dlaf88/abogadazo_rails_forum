@@ -13,5 +13,7 @@ class Topic < ActiveRecord::Base
   has_many :questions
 
   validates :name, presence: true
+
+  paginates_per 20
   
 end

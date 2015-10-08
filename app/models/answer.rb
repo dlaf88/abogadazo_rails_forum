@@ -16,5 +16,7 @@ class Answer < ActiveRecord::Base
   belongs_to :question
 
   validates :user, :question, :content, presence: true
+
+  paginates_per 10
   
 end
