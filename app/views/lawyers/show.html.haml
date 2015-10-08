@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @lawyer.user_id
+%p
+  %b Address:
+  = @lawyer.address
+%p
+  %b Law school:
+  = @lawyer.law_school
+%p
+  %b Image:
+  = @lawyer.image
+
+= link_to 'Edit', edit_lawyer_path(@lawyer)
+\|
+= link_to 'Back', lawyers_path

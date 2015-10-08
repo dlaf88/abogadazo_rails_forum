@@ -1,0 +1,11 @@
+= simple_form_for(@lawyer) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :user_id
+    = f.input :address
+    = f.input :law_school
+    = f.input :image
+
+  .form-actions
+    = f.button :submit
