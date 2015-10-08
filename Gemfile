@@ -16,6 +16,7 @@ gem 'simple_form'
 gem 'unicorn'
 gem 'unicorn-rails'
 gem 'omniauth-facebook'
+gem 'annotate'
 
 group :development do
   gem 'web-console', '~> 2.0'
