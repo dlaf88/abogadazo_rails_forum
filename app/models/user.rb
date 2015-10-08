@@ -5,4 +5,9 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   devise :omniauthable, :omniauth_providers => [:facebook]
+
+  has_many :lawyers
+  has_many :questions
+  has_many :answers
+  
 end
