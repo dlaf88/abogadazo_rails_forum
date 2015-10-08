@@ -1,9 +1,9 @@
 class CreateQuestions < ActiveRecord::Migration
   def change
     create_table :questions do |t|
-      t.integer :user_id
+      t.references :user, index: true, foreign_key: true
       t.string :type
-      t.integer :topic_id
+      t.references :topic, index: true, foreign_key: true
       t.string :title
       t.string :content
 
