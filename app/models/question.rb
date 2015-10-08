@@ -17,5 +17,7 @@ class Question < ActiveRecord::Base
   belongs_to :user
   belongs_to :topic
   has_many :answers
+
+  validates :user, :topic, :title, :content, presence: true
   
 end

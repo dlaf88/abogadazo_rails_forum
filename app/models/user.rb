@@ -31,5 +31,7 @@ class User < ActiveRecord::Base
   has_many :lawyers
   has_many :questions
   has_many :answers
+
+  validates :name, :email, presence: true
   
 end
