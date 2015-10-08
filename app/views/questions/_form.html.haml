@@ -1,0 +1,12 @@
+= simple_form_for(@question) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :user_id
+    = f.input :type
+    = f.input :topic_id
+    = f.input :title
+    = f.input :content
+
+  .form-actions
+    = f.button :submit

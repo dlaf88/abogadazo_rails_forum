@@ -1,0 +1,29 @@
+%h1 Listing questions
+
+%table
+  %thead
+    %tr
+      %th User
+      %th Type
+      %th Topic
+      %th Title
+      %th Content
+      %th
+      %th
+      %th
+
+  %tbody
+    - @questions.each do |question|
+      %tr
+        %td= question.user_id
+        %td= question.type
+        %td= question.topic_id
+        %td= question.title
+        %td= question.content
+        %td= link_to 'Show', question
+        %td= link_to 'Edit', edit_question_path(question)
+        %td= link_to 'Destroy', question, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Question', new_question_path
